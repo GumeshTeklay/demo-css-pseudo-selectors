@@ -1,1 +1,60 @@
-/* developer styles go here */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+}
+
+section{
+    padding: 3rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* child selector - selects elements based on their position as a
+child in any parent element */
+section:first-child{
+    background-color: crimson;
+}
+
+section:nth-child(2){
+    background-color: tomato;
+}
+
+section:nth-child(3){
+    background-color: khaki;
+}
+
+section:nth-child(4){
+    background-color: lightgreen;
+}
+/* same as */
+/* section:nth-last-child(3){
+    background-color: lightgreen;
+} */
+
+section:nth-child(5){
+    background-color: lightseagreen;
+}
+
+section:last-child{
+    background-color: steelblue;
+}
+
+section:only-child{
+    background-color: whitesmoke;
+}
+
+/* nth of type selectors - selects elements based on their position as a
+child as that TYPE os select */
+p:first-of-type{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+p:last-of-type{
+    font-size: 1rem;
+}
+
+/* p:nth-of-type(2){
+    display: none;
+} */
